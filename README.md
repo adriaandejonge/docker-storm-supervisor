@@ -1,6 +1,7 @@
-# docker-storm
-Storm Base Image
+# Storm Supervisor Image
+
+Run Worker with
 
 ```
-to do
+docker run -d --link zookeeper:zookeeper --link nimbus:nimbus -p 6627:6627 --restart always adejonge/storm supervisor
 ```
